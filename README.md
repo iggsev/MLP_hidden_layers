@@ -1,4 +1,3 @@
-# Read Me Template
 
 ![Project Image](project-image-url)
 
@@ -19,7 +18,11 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
+This project aims to observe the behavior from hidden layers, how the neural network adapts to solve problems proposed. More specically how it "chooses" node weights and what properties results that characterize each layer. \
+Primarily a well-known example has been implemented, how classify handwritten numbers to typed numbers ( main_number_reader.py ), in this kind of problem is necessary many nodes and layers this makes them difficult to observe the proprieties. \
+Because of this we will analyze the networks trained to binary classification problems. The network has to classify two regions A (red) and B
+(blue) separated by a barrier, where the barrier is given by a function, f. In that case topology techniques are used to obtain information on the deformations performed
+by the ANNs in the initial dataset. 
 
 #### Technologies
 
@@ -32,9 +35,10 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 ## How To Use
 
-#### Installation
+#### Requirements
 
-
+Python 3.8 \ 
+Mlxtend, Mnist \
 
 #### API Reference
 
@@ -54,7 +58,7 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 MIT License
 
-Copyright (c) [2017] [James Q Quick]
+Copyright (c) [2021] Igor Gusev 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
