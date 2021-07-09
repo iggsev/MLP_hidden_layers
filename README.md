@@ -19,22 +19,32 @@ You're sections headers will be used to reference location of destination.
 ## Description
 
 This project aims to observe the behavior from hidden layers, how the neural network adapts to solve problems proposed. More specically how it "chooses" node weights and what properties results that characterize each layer. \
-Primarily a well-known example has been implemented, how classify handwritten numbers to typed numbers ( main_number_reader.py ), in this kind of problem is necessary many nodes and layers this makes them difficult to observe the proprieties. \
-Because of this we will analyze the networks trained to binary classification problems. The network has to classify two regions A (red) and B
+Primarily a well-known example has been implemented, how classify handwritten numbers to typed numbers (main_number_reader.py), in this kind of problem is necessary many nodes and layers this makes them difficult to observe the proprieties. \
+Because of this we will analyze the networks trained to binary classification problems (main_barrier.py). The network has to classify two regions A (red) and B
 (blue) separated by a barrier, where the barrier is given by a function, f. In that case topology techniques are used to obtain information on the deformations performed
 by the ANNs in the initial dataset. 
 
-#### Technologies
-
-- Technology 1
-- Technology 2
-
-[Back To The Top](#read-me-template)
-
----
-
+ <p align="center">
+    <img windth="470" src=images/exnuvem.png 
+ <p >
+    
 ## How To Use
 
+#### Inputs
+    
+At main files you can edit all the parameters: \
+**Neural Network**: a vector representing number of nodes per layer, epochs, learning rate and activation function (sigmoid, hyperbolic tangent and sine). \
+**Training**: barrier function, training size and domain. \
+**Testing**: training size and domain. \
+**Graphic options**: resolution and number of runs.  
+    
+#### Outputs
+ 
+ For bouth main files: \
+   Loss function, fraction error, histogram weight. \
+ Only at main_barrier.py : \
+    Precision error, classified area, hidden layer deformation. 
+   
 #### Requirements
 
 Python 3.8 \ 
