@@ -10,9 +10,9 @@ You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [How To Use](#how-to-use)
+- [A Simple Example](#a-simple-example)
 - [References](#references)
 - [License](#license)
-- [Author Info](#author-info)
 
 ---
 
@@ -47,21 +47,34 @@ At main files you can edit all the parameters: \
    
 #### Requirements
 
-Python 3.8 \ 
-Mlxtend, Mnist \
+* Python 3.8 
+* Mlxtend
+* Mnist 
 
-#### API Reference
 
-```html
-    <p>dummy code</p>
-```
-[Back To The Top](#read-me-template)
+## A Simple Example
 
----
+In theory the neural network transforms a nonlinear problem into a linear problem. Let's test f(x)=|x| as a barrier function with 2 nodes in the hidden layer:  
+
+ <p align="center">
+    <img windth="470" src=images/classification.png 
+ <p >
+
+In this case, it is difficult to observe the network strategy with the histograms:
+
+<p float="center">
+  <img src="images/hist1.png" width="470" />
+  <img src="images/hist2.png" width="470" /> 
+</p>
+
+Notice that the hidden layer received a linear problem:
+
+ <p align="center">
+    <img windth="470" src=images/def.png 
+ <p >
 
 ## References
-[Back To The Top](#read-me-template)
-
+http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/
 ---
 
 ## License
